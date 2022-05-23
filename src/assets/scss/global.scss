@@ -1,0 +1,114 @@
+@import "./color";
+@import "./spacing";
+@import "./typography";
+@import "./variable";
+
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.top-frame{
+    margin-top: 12px;
+    height: 50px;
+    width: 970px;
+    background-color: $colorBackground;
+    text-align: center;
+    margin-bottom: 28px;
+    border: 1px $colorBorder solid;
+    margin-left: 16%;
+    color: #5A5A5A;
+}
+
+.billboard{
+    height: 250px;
+    width: 970px;
+    background-color: $colorBackground;
+    text-align: center;
+    border: 1px $colorBorder solid;
+    margin-left: 16%;
+    margin-bottom: 60px;
+    color: #5A5A5A;
+}
+
+.campaign{
+    height: 250px;
+    width: 970px;
+    background-color: $colorBackground;
+    text-align: center;
+    border: 1px $colorBorder solid;
+    margin-left: 16%;
+    margin-bottom: 60px;
+    margin-top: 60px;
+    color: #5A5A5A;
+}
+
+.button__primary{
+    height: 0;
+    font-size: 18px !important;
+    border-radius: 5px !important;
+    padding: 22px !important;
+    text-transform: none !important;
+    position: relative !important;
+    transform: translateY(25%);
+    background-color: $colorPrimary !important;
+    color: $colorWhite !important;
+    border: 1px solid $colorPrimary !important;
+}
+
+.box__text{
+    font-size: 20px;
+    margin: 60px 0px 32px 55px;
+}
+
+.list__product{
+    border: 1px #9b9b9b solid;
+    border-radius: 10px;
+    margin-top: -14px;
+}
+
+.list__matches{
+    border: 1px #ffffff solid;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 80%;
+    background-color: #ffffff;
+    margin-left: 35px;
+}
+
+.image__editor{
+    position: relative;
+}
+
+.list__editor{
+    margin-right: 34px !important;
+}
+
+.image__article{
+    width: 350px;
+    border-radius: 10px;
+}
+
+.image__group{
+    width: 190px;
+    height: 190px;
+}
+
+.image__group--button{
+    width: 40px;
+}
+
+.list__group{
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px #bcbcbc;
+    width: 85%
+}
+
+.description__group{
+    font-size: 14px;
+    text-align: center;
+    height: 80px;
+    padding: 20px;
+}

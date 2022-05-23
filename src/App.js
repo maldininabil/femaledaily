@@ -2,6 +2,8 @@ import { Fragment, BrowserRouter, Routes, Route } from 'libraries';
 import { Suspense } from 'react';
 import routes from 'routes';
 
+import "assets/scss/global.scss";
+
 function App() {
   return (
     <Fragment>
