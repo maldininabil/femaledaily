@@ -17,6 +17,8 @@ import User from "assets/images/user.png";
 import Setting from "assets/images/setting.png";
 import Chat from "assets/images/chat.png";
 import MatchesImage from "assets/images/matches-image.png";
+import AppStore from "assets/images/app-store.png";
+import GooglePlay from "assets/images/google-play.png";
 
 export { Logo, Nivea, TheOrdinary, TheBodyShop, SKII, Maybeline, Innisfree, Blush, Pigment, Serum, People1, People2, 
-    People3, People4, People5, User, Setting, Chat, MatchesImage };
+    People3, People4, People5, User, Setting, Chat, MatchesImage, AppStore, GooglePlay };

@@ -17,33 +17,33 @@ const Brands = () => {
                     </div>
                 </Grid>
                 <Grid item xs={2} sm={2} md={2} lg={2}>
-                    <div className={"text__align--center"}>
-                        <img src={Nivea} alt={"Nivea"} width={80} height={50} />
+                    <div className={"image"}>
+                        <img src={Nivea} alt={"Nivea"} />
                     </div>
                 </Grid>
                 <Grid item xs={2} sm={2} md={2} lg={2}>
-                    <div className={"text__align--center"}>
-                        <img src={TheOrdinary} alt={"The Ordinary"} width={80} height={50} />
+                    <div className={"image"}>
+                        <img src={TheOrdinary} alt={"The Ordinary"} />
                     </div>
                 </Grid>
                 <Grid item xs={2} sm={2} md={2} lg={2}>
-                    <div className={"text__align--center"}>
-                        <img src={TheBodyShop} alt={"The Body Shop"} width={80} height={50} />
+                    <div className={"image"}>
+                        <img src={TheBodyShop} alt={"The Body Shop"} />
                     </div>
                 </Grid>
                 <Grid item xs={2} sm={2} md={2} lg={2}>
-                    <div className={"text__align--center"}>
-                        <img src={SKII} alt={"SK II"} width={80} height={50} />
+                    <div className={"image"}>
+                        <img src={SKII} alt={"SK II"} />
                     </div>
                 </Grid>
                 <Grid item xs={2} sm={2} md={2} lg={2}>
-                    <div className={"text__align--center"}>
-                        <img src={Maybeline} alt={"Maybeline"} width={80} height={50} />
+                    <div className={"image"}>
+                        <img src={Maybeline} alt={"Maybeline"} />
                     </div>
                 </Grid>
                 <Grid item xs={2} sm={2} md={2} lg={2}>
-                    <div className={"text__align--center margin__bottom--32px"}>
-                        <img src={Innisfree} alt={"Innisfree"} width={80} height={50} />
+                    <div className={"image"}>
+                        <img src={Innisfree} alt={"Innisfree"} />
                     </div>
                 </Grid>
                 <Grid item xs={12} sm={12} md={12} lg={12}>

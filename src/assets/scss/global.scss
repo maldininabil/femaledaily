@@ -9,6 +9,19 @@ html, body{
     padding: 0;
 }
 
+.container{
+    padding-top: 105px;
+}
+
+.image {
+    text-align: center;
+    img {
+        max-width: 100%;
+        width: auto;
+        height: 60px;
+    }
+}
+
 .top-frame{
     margin-top: 12px;
     height: 50px;
@@ -47,6 +60,21 @@ html, body{
     margin-left: 16%;
     margin-bottom: 60px;
     margin-top: 60px;
+    color: #5A5A5A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom-frame{
+    margin-top: 60px;
+    height: 50px;
+    width: 970px;
+    background-color: $colorBackground;
+    text-align: center;
+    margin-bottom: 28px;
+    border: 1px $colorBorder solid;
+    margin-left: 16%;
     color: #5A5A5A;
     display: flex;
     justify-content: center;
@@ -132,6 +160,12 @@ html, body{
 .image__preview{
     margin-top: -25px;
     margin-bottom: 10px;
+    margin-left: 44%;
+}
+
+.list__preview{
+    width: 90%;
+    text-align: center;
 }
 
 .image__matches{
@@ -203,6 +237,24 @@ html, body{
     }
 }
 
+.footer__menu{
+    ul{
+        margin: 0;
+        padding: 0;
+        li{
+            display: block;
+            cursor: pointer;
+            font-size: 14px;
+            padding-top: 16px;
+            padding-bottom: 16px;
+            font-weight: bold;
+            &:hover{
+                color: $colorPrimary
+            }
+        }
+    }
+}
+
 .border__top{
     border-top: 2px #EFEFEF solid;
 }
@@ -227,6 +279,25 @@ html, body{
     cursor: pointer;
     width: 90%;
 }
+
+.slick-thumb {
+    width: 100% !important;
+    bottom: -30px !important;
+  }
+  
+  .slick-dots li {
+    margin: 0 0 !important;
+    width: 12px !important;
+  }
+  
+  .slick-dots li.slick-active button:before {
+      color: $colorPrimary !important
+  }
+    
+  
+  .slick-dots li button:hover {
+    color: $colorPrimary !important
+  }
 
 .css-1kcggdq-MuiInputBase-root .MuiInputBase-input{
     width: 40ch !important;

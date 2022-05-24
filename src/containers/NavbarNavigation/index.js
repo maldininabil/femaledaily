@@ -45,7 +45,7 @@ const NavbarNavigation = () => {
 
     return(
         <Box sx={{ flexGrow: 1 }}>
-            <AppBar position="static" className={"navbar"}>
+            <AppBar position="fixed" className={"navbar"}>
                 <Toolbar className={"navbar__border"}>
                 <IconButton
                     size="large"
