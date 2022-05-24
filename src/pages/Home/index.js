@@ -16,6 +16,7 @@ const Home = () => {
     const [editorsChoice] = useState(data["editor's choice"]);
     const [latestArticles] = useState(data["latest articles"]);
     const [latestReviews] = useState(data["latest review"]);
+    const [trending] = useState(data["trending"]);
     
     return(
         <Fragment>
@@ -38,7 +39,7 @@ const Home = () => {
             <LatestReviews latestReviews={latestReviews} />
             <PopularGroups />
             <LatestVideos />
-            <Trending trending={editorsChoice} />
+            <Trending trending={trending} />
             <Brands />
         </Fragment>
     )
