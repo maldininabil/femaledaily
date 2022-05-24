@@ -1,7 +1,7 @@
 import { Container, Grid } from "libraries";
-import { Video1, Video2, Video3 } from "libraries/images";
+import { FaPlay } from "react-icons/fa";
 
-const LatestVideos = () => {
+const LatestVideos = (props) => {
     return(
         <Container>
             <div className={"margin__bottom--40px"}>
@@ -18,17 +18,24 @@ const LatestVideos = () => {
                         </div>
                     </Grid>
                     <Grid item xs={8} sm={8} md={8} lg={8}>
-                        <img src={Video1} width={730} height={410} />
+                        <div className={"video"} onClick={() => props.handleShowYoutube("j5T_DPgQPNw")}>
+                            <img src={"https://img.youtube.com/vi/j5T_DPgQPNw/maxresdefault.jpg"} quality={70} width={730} height={410} />
+                            <FaPlay className={"play__button"} />
+                        </div>
                     </Grid>
                     <Grid item xs={4} sm={4} md={4} lg={4}>
                         <Grid container>
                             <Grid item xs={12} sm={12} md={12} lg={12}>
-                                <div className={"margin__bottom--4px"}>
-                                    <img src={Video2} width={350} height={200} />
+                                <div className={"margin__bottom--4px video"} onClick={() => props.handleShowYoutube("yuLcRK9tDk4")}>
+                                    <img src={"https://img.youtube.com/vi/yuLcRK9tDk4/maxresdefault.jpg"} quality={70} width={350} height={200} />
+                                    <FaPlay className={"play__button"} />
                                 </div>
                             </Grid>
                             <Grid item xs={12} sm={12} md={12} lg={12}>
-                                <img src={Video3} width={350} height={200} />
+                                <div className={"video"} onClick={() => props.handleShowYoutube("FvbNZd-IxK4")}>
+                                    <img src={"https://img.youtube.com/vi/FvbNZd-IxK4/maxresdefault.jpg"} quality={70} width={350} height={200} />
+                                    <FaPlay className={"play__button"} />
+                                </div>
                             </Grid>
                         </Grid>
                     </Grid>

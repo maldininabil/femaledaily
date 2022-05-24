@@ -1,12 +1,14 @@
 import { Box, Button, Fragment, Grid } from "libraries";
-import { Blush, Pigment, Serum } from "libraries/images";
+import { Blush, Pigment, Serum, MatchesImage } from "libraries/images";
 
 const Matches = () => {
     return(
         <Fragment>
             <Box sx={{ bgcolor: '#fddae0', height: '50vh' }} className={"margin__bottom--40px"}>
                 <Grid container>
-                    <Grid item xs={2} sm={2} md={2} lg={2}></Grid>
+                    <Grid item xs={2} sm={2} md={2} lg={2}>
+                        <img src={MatchesImage} className={"image__matches"} />
+                    </Grid>
                     <Grid item xs={3} sm={3} md={3} lg={3}>
                         <div className={"box__text"}>
                             <p className={"font__size--24 font__weight--600"}>

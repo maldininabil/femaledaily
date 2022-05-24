@@ -9,6 +9,7 @@ const LatestArticles = lazy(() => import('components/LatestArticles'));
 const LatestReviews = lazy(() => import('components/LatestReviews'));
 const PopularGroups = lazy(() => import('components/PopularGroups'));
 const LatestVideos = lazy(() => import('components/LatestVideos'));
+const PopupVideo = lazy(() => import('components/PopupVideo'));
 const Trending = lazy(() => import('components/Trending'));
 const Brands = lazy(() => import('components/Brands'));
 
@@ -17,6 +18,17 @@ const Home = () => {
     const [latestArticles] = useState(data["latest articles"]);
     const [latestReviews] = useState(data["latest review"]);
     const [trending] = useState(data["trending"]);
+    const [ youtubeId, setYoutubeId ] = useState(null);
+    const [ openYoutube, setOpenYoutube ] = useState(false);
+
+    function handleShowYoutube(id) {
+        setYoutubeId(id);
+        setOpenYoutube(true);
+    }
+
+    function handleCloseYoutube () {
+        setOpenYoutube(false);
+    }
     
     return(
         <Fragment>
@@ -38,7 +50,8 @@ const Home = () => {
             <LatestArticles latestArticles={latestArticles} />
             <LatestReviews latestReviews={latestReviews} />
             <PopularGroups />
-            <LatestVideos />
+            <LatestVideos handleShowYoutube={handleShowYoutube} />
+            <PopupVideo youtubeId={youtubeId} openYoutube={openYoutube} handleCloseYoutube={handleCloseYoutube} />
             <Trending trending={trending} />
             <Brands />
         </Fragment>

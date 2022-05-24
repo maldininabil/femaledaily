@@ -1,5 +1,6 @@
 import { Container, Grid } from "libraries";
 import { People5 } from "libraries/images";
+import { Rating } from "@mui/material";
 
 const LatestReviews = (props) => {
     return(
@@ -37,7 +38,14 @@ const LatestReviews = (props) => {
                                                 </div>
                                             </Grid>
                                             <Grid item xs={6} sm={6} md={6} lg={6}>
-                                                <div className={"border__top padding__top--8px"}></div>
+                                                <div className={"border__top padding__top--8px"}>
+                                                    <Rating 
+                                                        name={"rating"} 
+                                                        value={review.star} 
+                                                        precision={0.5} 
+                                                        className={"color__primary font__size--14"}
+                                                        readOnly />
+                                                </div>
                                             </Grid>
                                             <Grid item xs={6} sm={6} md={6} lg={6}>
                                                 <div className={"text__align--right color__grey border__top padding__top--8px"}>

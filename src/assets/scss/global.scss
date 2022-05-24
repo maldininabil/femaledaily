@@ -134,6 +134,11 @@ html, body{
     margin-bottom: 10px;
 }
 
+.image__matches{
+    width: 320px;
+    margin-top: 15px;
+}
+
 .list__group{
     background-color: #FFFFFF;
     border-radius: 8px;
@@ -206,6 +211,21 @@ html, body{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.play__button{
+    color: $colorWhite;
+    font-size: 4rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.video{
+    position: relative;
+    cursor: pointer;
+    width: 90%;
 }
 
 .css-1kcggdq-MuiInputBase-root .MuiInputBase-input{

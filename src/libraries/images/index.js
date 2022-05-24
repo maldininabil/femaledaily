@@ -16,9 +16,7 @@ import People5 from "assets/images/people-5.png";
 import User from "assets/images/user.png";
 import Setting from "assets/images/setting.png";
 import Chat from "assets/images/chat.png";
-import Video1 from "assets/images/video-1.png";
-import Video2 from "assets/images/video-2.png";
-import Video3 from "assets/images/video-3.png";
+import MatchesImage from "assets/images/matches-image.png";
 
 export { Logo, Nivea, TheOrdinary, TheBodyShop, SKII, Maybeline, Innisfree, Blush, Pigment, Serum, People1, People2, 
-    People3, People4, People5, User, Setting, Chat, Video1, Video2, Video3 };
+    People3, People4, People5, User, Setting, Chat, MatchesImage };
