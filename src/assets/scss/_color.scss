@@ -1,6 +1,6 @@
 @import "./variable";
 
-.color__primary{color: $colorPrimary}
+.color__primary{color: $colorPrimary !important}
 .color__black{color: $colorBlack}
 .color__white{color: $colorWhite}
 .color__grey{color: $colorGrey}

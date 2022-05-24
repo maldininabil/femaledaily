@@ -2,6 +2,7 @@ import { Fragment, Helmet, lazy, useState } from "libraries";
 
 import data from "configs/data/api.json";
 
+const NavbarNavigation = lazy(() => import('containers/NavbarNavigation'));
 const EditorChoice = lazy(() => import('components/EditorChoice'));
 const Matches = lazy(() => import('components/Matches'));
 const LatestArticles = lazy(() => import('components/LatestArticles'));
@@ -21,6 +22,7 @@ const Home = () => {
             <Helmet>
                 <title>Homepage</title>
             </Helmet>
+            <NavbarNavigation />
             <div className={"top-frame"}>
                 <span className={"font__size--32"}>Top Frame 970x50</span>
             </div>
@@ -36,7 +38,7 @@ const Home = () => {
             <LatestReviews latestReviews={latestReviews} />
             <PopularGroups />
             <LatestVideos />
-            <Trending />
+            <Trending trending={editorsChoice} />
             <Brands />
         </Fragment>
     )

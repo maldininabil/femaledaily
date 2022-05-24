@@ -19,6 +19,9 @@ html, body{
     border: 1px $colorBorder solid;
     margin-left: 16%;
     color: #5A5A5A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .billboard{
@@ -30,6 +33,9 @@ html, body{
     margin-left: 16%;
     margin-bottom: 60px;
     color: #5A5A5A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .campaign{
@@ -42,6 +48,23 @@ html, body{
     margin-bottom: 60px;
     margin-top: 60px;
     color: #5A5A5A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mr{
+    height: 250px;
+    width: 300px;
+    background-color: $colorBackground;
+    text-align: center;
+    margin-bottom: 28px;
+    border: 1px $colorBorder solid;
+    margin-left: 10%;
+    color: #5A5A5A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .button__primary{
@@ -63,7 +86,7 @@ html, body{
 }
 
 .list__product{
-    border: 1px #9b9b9b solid;
+    border: 2px #EFEFEF solid;
     border-radius: 10px;
     margin-top: -14px;
 }
@@ -75,6 +98,13 @@ html, body{
     width: 80%;
     background-color: #ffffff;
     margin-left: 35px;
+}
+
+.list__review{
+    border: 2px #EFEFEF solid;
+    width: 80%;
+    border-radius: 7px;
+    padding: 5%;
 }
 
 .image__editor{
@@ -99,6 +129,11 @@ html, body{
     width: 40px;
 }
 
+.image__preview{
+    margin-top: -25px;
+    margin-bottom: 10px;
+}
+
 .list__group{
     background-color: #FFFFFF;
     border-radius: 8px;
@@ -111,4 +146,76 @@ html, body{
     text-align: center;
     height: 80px;
     padding: 20px;
+}
+
+.navbar{
+    background-color: #FFFFFF !important;
+    color: #252525 !important;
+    // position: fixed !important;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    box-shadow: none !important;
+}
+
+.navbar__search{
+    border: 2px #EFEFEF solid;
+    border-radius: 7px;
+    width: 103ch;
+}
+
+.navbar__button{
+    color: $colorWhite !important;
+    background-color: $colorPrimary !important;
+    border-radius: 0px !important;
+    height: 64px;
+    width: 220px;
+}
+
+.navbar__menu{
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px #EFEFEF solid;
+    border-top: 2px #EFEFEF solid;
+    margin-top: -2px;
+    ul{
+        margin: 0;
+        padding: 0;
+        li{
+            display: inline-block;
+            margin-right: 40px;
+            cursor: pointer;
+            font-size: 14px;
+            padding-top: 16px;
+            padding-bottom: 16px;
+            font-weight: bold;
+            &:hover{
+                color: $colorPrimary
+            }
+        }
+    }
+}
+
+.border__top{
+    border-top: 2px #EFEFEF solid;
+}
+
+.text__center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.css-1kcggdq-MuiInputBase-root .MuiInputBase-input{
+    width: 40ch !important;
+}
+
+.css-1t29gy6-MuiToolbar-root{
+    padding-right: 0px !important;
+}
+
+.css-ryrseu-MuiRating-root{
+    font-size: 1.3rem !important;
 }
