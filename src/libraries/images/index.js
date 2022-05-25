@@ -23,7 +23,8 @@ import Facebook from "assets/images/facebook.png";
 import Twitter from "assets/images/twitter.png";
 import Instagram from "assets/images/instagram.png";
 import YouTube from "assets/images/youtube.png";
+import Editor from "assets/images/editor.png";
 
 export { Logo, Nivea, TheOrdinary, TheBodyShop, SKII, Maybelline, Innisfree, Blush, Pigment, Serum, People1, People2, 
     People3, People4, People5, User, Setting, Chat, MatchesImage, AppStore, GooglePlay, Facebook, Twitter, Instagram, 
-    YouTube };
+    YouTube, Editor };

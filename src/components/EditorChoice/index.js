@@ -1,5 +1,5 @@
 import { Container, Grid } from "libraries";
-import { People5 } from "libraries/images";
+import { Editor } from "libraries/images";
 import { Rating } from "@mui/material";
 
 const EditorChoice = (props) => {
@@ -14,7 +14,7 @@ const EditorChoice = (props) => {
                             <Grid container>
                                 <Grid item xs={6} sm={6} md={6} lg={6}>
                                     <div className={"text__align--right margin__right--8px image__editor"}>
-                                        <img src={People5} width={55} height={55} />
+                                        <img src={Editor} width={55} height={55} />
                                     </div>
                                 </Grid>
                                 <Grid item xs={6} sm={6} md={6} lg={6}>

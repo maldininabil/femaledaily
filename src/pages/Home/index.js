@@ -43,7 +43,7 @@ const Home = () => {
     return(
         <Fragment>
             <Helmet>
-                <title>Homepage</title>
+                <title>Female Daily</title>
             </Helmet>
             <NavbarNavigation />
             <div className={"container"}>
