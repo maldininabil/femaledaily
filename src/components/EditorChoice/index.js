@@ -14,7 +14,7 @@ const EditorChoice = (props) => {
                             <Grid container>
                                 <Grid item xs={6} sm={6} md={6} lg={6}>
                                     <div className={"text__align--right margin__right--8px image__editor"}>
-                                        <img src={Editor} width={55} height={55} />
+                                        <img src={Editor} width={55} height={55} alt={"editor"} />
                                     </div>
                                 </Grid>
                                 <Grid item xs={6} sm={6} md={6} lg={6}>
@@ -24,7 +24,7 @@ const EditorChoice = (props) => {
                                 <div className={"margin__bottom--40px list__product"}>
                                     <Grid item xs={12} sm={12} md={12} lg={12}>
                                         <div className={"margin__bottom--8px margin__left--8px padding__top--8px"}>
-                                            <img src={choice.product.image} width={200} height={250} />
+                                            <img src={choice.product.image} width={200} height={250} alt={"product"} />
                                         </div>
                                     </Grid>
                                     <Grid item xs={12} sm={12} md={12} lg={12}>
