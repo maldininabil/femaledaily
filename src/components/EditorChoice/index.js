@@ -31,8 +31,8 @@ const EditorChoice = (props) => {
                                         <div className={"margin__bottom--8px margin__left--8px"}>
                                             <Grid container>
                                                 <Grid item xs={2} sm={2} md={2} lg={2} className={"text__center"}>
-                                                    <div className={"font__weight--600 margin__right--4px"}>{
-                                                        choice.product.rating}
+                                                    <div className={"font__weight--600 margin__right--4px"}>
+                                                    {choice.product.rating}
                                                     </div>
                                                 </Grid>
                                                 <Grid item xs={7} sm={7} md={7} lg={7}>

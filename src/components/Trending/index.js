@@ -10,7 +10,7 @@ const NextArrowHorizontal = (props) => {
             onClick={onClick}
             style={{left: '53.5%', fontSize: '18px', zIndex: '1', top: '100%', color: 'red'}}
         >
-            <FaChevronRight color={'#C8C8C8'} />
+            <FaChevronRight color={'#dc2850'} />
         </div>
     );
 };
@@ -23,7 +23,7 @@ const PrevArrowHorizontal = (props) => {
             onClick={onClick}
             style={{left: '45%', fontSize: '18px', zIndex: '1', top: '100%', color: 'red'}}
         >
-            <FaChevronLeft color={'#C8C8C8'} />
+            <FaChevronLeft color={'#dc2850'} />
         </div>
     );
 };

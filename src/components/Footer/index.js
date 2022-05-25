@@ -1,10 +1,10 @@
 import { Container, Grid } from "libraries";
-import { AppStore, GooglePlay, Logo } from "libraries/images";
+import { AppStore, GooglePlay, Logo, Facebook, Twitter, Instagram, YouTube } from "libraries/images";
 
 const Footer = () => {
     return(
         <Container>
-            <div className={"margin__top--40px margin__bottom--24px"}>
+            <div className={"margin__top--16px margin__bottom--24px"}>
                 <Grid container>
                     <Grid item xs={3} sm={3} md={3} lg={3}>
                         <div className={"footer__menu"}>
@@ -38,10 +38,14 @@ const Footer = () => {
                         </div>
                         <Grid container>
                             <Grid item xs={6} sm={6} md={6} lg={6}>
-                                <img src={AppStore} alt={"app-store"} width={130} />
+                                <div className={"cursor__pointer"}>
+                                    <img src={AppStore} alt={"app-store"} width={130} />
+                                </div>
                             </Grid>
                             <Grid item xs={6} sm={6} md={6} lg={6}>
+                            <div className={"cursor__pointer"}>
                                 <img src={GooglePlay} alt={"google-play"} width={145} />
+                            </div>
                             </Grid>
                         </Grid>
                     </Grid>
@@ -53,7 +57,17 @@ const Footer = () => {
                         <div>
                             <img src={Logo} alt={"logo"} width={170} />
                         </div>
-                        <div>Copyright 2015 - 2017 Female Daily Network All rights reserved</div>
+                        <div>Copyright &copy; 2015 - 2017 Female Daily Network ∙ All rights reserved</div>
+                    </Grid>
+                    <Grid item xs={3} sm={3} md={3} lg={3}>
+                        <div className={"socmed"}>
+                            <ul>
+                                <li><img src={Facebook} alt={"facebook"} width={40} /></li>
+                                <li><img src={Twitter} alt={"twitter"} width={40} /></li>
+                                <li><img src={Instagram} alt={"instagram"} width={40} /></li>
+                                <li><img src={YouTube} alt={"youtube"} width={40} /></li>
+                            </ul>
+                        </div>
                     </Grid>
                 </Grid>
             </div>

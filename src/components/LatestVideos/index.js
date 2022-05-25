@@ -14,7 +14,9 @@ const LatestVideos = (props) => {
                     </Grid>
                     <Grid item xs={2} sm={2} md={2} lg={2}>
                         <div className={"text__align--center margin__bottom--40px"}>
-                            <span className={"font__size--20 color__primary"}>See more ></span>
+                            <span className={"font__size--20 color__primary cursor__pointer"}>
+                                See more >
+                            </span>
                         </div>
                     </Grid>
                     <Grid item xs={8} sm={8} md={8} lg={8}>

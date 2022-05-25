@@ -1,6 +1,7 @@
-import { Fragment, Helmet, lazy, useState } from "libraries";
+import { Fragment, Helmet, lazy, useEffect, useState, } from "libraries";
 
 import data from "configs/data/api.json";
+import { getWP } from "services";
 
 const NavbarNavigation = lazy(() => import('containers/NavbarNavigation'));
 const EditorChoice = lazy(() => import('components/EditorChoice'));
@@ -15,12 +16,20 @@ const Brands = lazy(() => import('components/Brands'));
 const Footer = lazy(() => import('components/Footer'));
 
 const Home = () => {
-    const [editorsChoice] = useState(data["editor's choice"]);
-    const [latestArticles] = useState(data["latest articles"]);
-    const [latestReviews] = useState(data["latest review"]);
+    const [editorsChoice, setEditorChoice] = useState([]);
+    const [latestArticles, setLatestArticles] = useState([]);
+    const [latestReviews, setLatestReviews] = useState([]);
     const [trending] = useState(data["trending"]);
     const [ youtubeId, setYoutubeId ] = useState(null);
     const [ openYoutube, setOpenYoutube ] = useState(false);
+
+    useEffect(() => {
+        getWP({}).then(response => {
+            setEditorChoice(response["editor's choice"]);
+            setLatestArticles(response["latest articles"]);
+            setLatestReviews(response["latest review"]);
+        })
+    }, [])
 
     function handleShowYoutube(id) {
         setYoutubeId(id);
@@ -57,6 +66,7 @@ const Home = () => {
                 <Trending trending={trending} />
                 <Brands />
             </div>
+            <hr className={"border__default margin__top--40px"} />
             <Footer />
             <div className={"bottom-frame"}>
                 <span className={"font__size--32"}>Bottom Frame 970x50 468x60 320x50</span>

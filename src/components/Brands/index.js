@@ -1,5 +1,5 @@
 import { Container, Grid } from "libraries";
-import { Nivea, Maybeline, SKII, TheOrdinary, TheBodyShop, Innisfree } from "libraries/images";
+import { Nivea, Maybelline, SKII, TheOrdinary, TheBodyShop, Innisfree } from "libraries/images";
 
 const Brands = () => {
     return(
@@ -13,7 +13,9 @@ const Brands = () => {
                 </Grid>
                 <Grid item xs={2} sm={2} md={2} lg={2}>
                     <div className={"text__align--center margin__bottom--40px"}>
-                        <span className={"font__size--20 color__primary"}>See more ></span>
+                        <span className={"font__size--20 color__primary cursor__pointer"}>
+                            See more >
+                        </span>
                     </div>
                 </Grid>
                 <Grid item xs={2} sm={2} md={2} lg={2}>
@@ -38,7 +40,7 @@ const Brands = () => {
                 </Grid>
                 <Grid item xs={2} sm={2} md={2} lg={2}>
                     <div className={"image"}>
-                        <img src={Maybeline} alt={"Maybeline"} />
+                        <img src={Maybelline} alt={"Maybelline"} />
                     </div>
                 </Grid>
                 <Grid item xs={2} sm={2} md={2} lg={2}>

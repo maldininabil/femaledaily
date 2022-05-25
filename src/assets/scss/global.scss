@@ -255,6 +255,29 @@ html, body{
     }
 }
 
+.socmed{
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -2px;
+    ul{
+        margin: 0;
+        padding: 0;
+        li{
+            display: inline-block;
+            margin-right: 20px;
+            font-size: 14px;
+            padding-top: 16px;
+            padding-bottom: 16px;
+            font-weight: bold;
+            img{
+                cursor: pointer;
+            }
+        }
+    }
+}
+
 .border__top{
     border-top: 2px #EFEFEF solid;
 }
@@ -283,30 +306,27 @@ html, body{
 .slick-thumb {
     width: 100% !important;
     bottom: -30px !important;
-  }
-  
-  .slick-dots li {
+}
+
+.slick-dots li {
     margin: 0 0 !important;
     width: 12px !important;
-  }
-  
-  .slick-dots li.slick-active button:before {
-      color: $colorPrimary !important
-  }
-    
-  
-  .slick-dots li button:hover {
+}
+
+.slick-dots li.slick-active button:before {
     color: $colorPrimary !important
-  }
-
-.css-1kcggdq-MuiInputBase-root .MuiInputBase-input{
-    width: 40ch !important;
 }
 
-.css-1t29gy6-MuiToolbar-root{
-    padding-right: 0px !important;
+.slick-dots li button:hover {
+color: $colorPrimary !important
 }
 
-.css-ryrseu-MuiRating-root{
-    font-size: 1.3rem !important;
-}
+.cursor__pointer{cursor: pointer;}
+
+.border__default{border: 1px #EFEFEF solid;}
+
+.css-1kcggdq-MuiInputBase-root .MuiInputBase-input{width: 40ch !important;}
+
+.css-1t29gy6-MuiToolbar-root{padding-right: 0px !important;}
+
+.css-ryrseu-MuiRating-root{font-size: 1.3rem !important;}

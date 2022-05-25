@@ -11,7 +11,7 @@ const NextArrowHorizontal = (props) => {
             onClick={onClick}
             style={{left: '53.5%', fontSize: '18px', zIndex: '1', top: '100%', color: 'red'}}
         >
-            <FaChevronRight color={'#C8C8C8'} />
+            <FaChevronRight color={'#dc2850'} />
         </div>
     );
 };
@@ -24,7 +24,7 @@ const PrevArrowHorizontal = (props) => {
             onClick={onClick}
             style={{left: '45%', fontSize: '18px', zIndex: '1', top: '100%', color: 'red'}}
         >
-            <FaChevronLeft color={'#C8C8C8'} />
+            <FaChevronLeft color={'#dc2850'} />
         </div>
     );
 };
@@ -55,7 +55,9 @@ const LatestReviews = (props) => {
                     </Grid>
                     <Grid item xs={2} sm={2} md={2} lg={2}>
                         <div className={"text__align--center margin__bottom--40px"}>
-                            <span className={"font__size--20 color__primary"}>See more ></span>
+                            <span className={"font__size--20 color__primary cursor__pointer"}>
+                                See more >
+                            </span>
                         </div>
                     </Grid>
                     <Grid item xs={8} sm={8} md={8} lg={8}>

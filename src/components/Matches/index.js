@@ -1,5 +1,6 @@
 import { Box, Button, Fragment, Grid } from "libraries";
 import { Blush, Pigment, Serum, MatchesImage } from "libraries/images";
+import { Rating } from "@mui/material";
 
 const Matches = () => {
     return(
@@ -34,8 +35,26 @@ const Matches = () => {
                             </Grid>
                             <Grid item xs={12} sm={12} md={12} lg={12}>
                                 <div className={"margin__bottom--8px margin__left--16px"}>
-                                    <span className={"font__weight--600 margin__right--4px"}>4.9</span>
-                                    <span>(7)</span>
+                                    <Grid container>
+                                        <Grid item xs={2} sm={2} md={2} lg={2} className={"text__center"}>
+                                            <div className={"font__weight--600 margin__right--4px"}>
+                                                4.9
+                                            </div>
+                                        </Grid>
+                                        <Grid item xs={7} sm={7} md={7} lg={7}>
+                                            <div>
+                                                <Rating 
+                                                    name={"rating"} 
+                                                    value={"4.9"} 
+                                                    precision={0.5} 
+                                                    className={"color__primary font__size--14"}
+                                                    readOnly />
+                                            </div>
+                                        </Grid>
+                                        <Grid item xs={3} sm={3} md={3} lg={3} className={"padding__top--4px"}>
+                                            <div>(7)</div>
+                                        </Grid>
+                                    </Grid>
                                 </div>
                             </Grid>
                             <Grid item xs={12} sm={12} md={12} lg={12}>
@@ -49,7 +68,7 @@ const Matches = () => {
                                 </div>
                             </Grid>
                             <Grid item xs={12} sm={12} md={12} lg={12}>
-                                <div className={"margin__bottom--32px margin__left--16px"}>
+                                <div className={"margin__bottom--32px margin__left--16px color__grey"}>
                                     <span>Neutral Rose</span>
                                 </div>
                             </Grid>
@@ -68,23 +87,41 @@ const Matches = () => {
                                 </div>
                             </Grid>
                             <Grid item xs={12} sm={12} md={12} lg={12}>
-                                <div className={"margin__bottom--8px margin__left--8px"}>
-                                    <span className={"font__weight--600 margin__right--4px"}>4.9</span>
-                                    <span>(7)</span>
+                                <div className={"margin__bottom--8px margin__left--16px"}>
+                                    <Grid container>
+                                        <Grid item xs={2} sm={2} md={2} lg={2} className={"text__center"}>
+                                            <div className={"font__weight--600 margin__right--4px"}>
+                                                4.9
+                                            </div>
+                                        </Grid>
+                                        <Grid item xs={7} sm={7} md={7} lg={7}>
+                                            <div>
+                                                <Rating 
+                                                    name={"rating"} 
+                                                    value={"4.9"} 
+                                                    precision={0.5} 
+                                                    className={"color__primary font__size--14"}
+                                                    readOnly />
+                                            </div>
+                                        </Grid>
+                                        <Grid item xs={3} sm={3} md={3} lg={3} className={"padding__top--4px"}>
+                                            <div>(7)</div>
+                                        </Grid>
+                                    </Grid>
                                 </div>
                             </Grid>
                             <Grid item xs={12} sm={12} md={12} lg={12}>
-                                <div className={"margin__bottom--8px margin__left--8px"}>
+                                <div className={"margin__bottom--8px margin__left--16px"}>
                                     <span className={"font__weight--600"}>VAL BY VALERIE THOMAS</span>
                                 </div>
                             </Grid>
                             <Grid item xs={12} sm={12} md={12} lg={12}>
-                                <div className={"margin__bottom--8px margin__left--8px"}>
+                                <div className={"margin__bottom--8px margin__left--16px"}>
                                     <span>Phito Pigment Liquid Serum Foundation</span>
                                 </div>
                             </Grid>
                             <Grid item xs={12} sm={12} md={12} lg={12}>
-                                <div className={"margin__bottom--16px margin__left--16px"}>
+                                <div className={"margin__bottom--16px margin__left--16px color__grey"}>
                                     <span>Neutral Rose</span>
                                 </div>
                             </Grid>
@@ -103,23 +140,41 @@ const Matches = () => {
                                 </div>
                             </Grid>
                             <Grid item xs={12} sm={12} md={12} lg={12}>
-                                <div className={"margin__bottom--8px margin__left--8px"}>
-                                    <span className={"font__weight--600 margin__right--4px"}>4.9</span>
-                                    <span>(7)</span>
+                                <div className={"margin__bottom--8px margin__left--16px"}>
+                                    <Grid container>
+                                        <Grid item xs={2} sm={2} md={2} lg={2} className={"text__center"}>
+                                            <div className={"font__weight--600 margin__right--4px"}>
+                                                4.9
+                                            </div>
+                                        </Grid>
+                                        <Grid item xs={7} sm={7} md={7} lg={7}>
+                                            <div>
+                                                <Rating 
+                                                    name={"rating"} 
+                                                    value={"4.9"} 
+                                                    precision={0.5} 
+                                                    className={"color__primary font__size--14"}
+                                                    readOnly />
+                                            </div>
+                                        </Grid>
+                                        <Grid item xs={3} sm={3} md={3} lg={3} className={"padding__top--4px"}>
+                                            <div>(7)</div>
+                                        </Grid>
+                                    </Grid>
                                 </div>
                             </Grid>
                             <Grid item xs={12} sm={12} md={12} lg={12}>
-                                <div className={"margin__bottom--8px margin__left--8px"}>
+                                <div className={"margin__bottom--8px margin__left--16px"}>
                                     <span className={"font__weight--600"}>VAL BY VALERIE THOMAS</span>
                                 </div>
                             </Grid>
                             <Grid item xs={12} sm={12} md={12} lg={12}>
-                                <div className={"margin__bottom--8px margin__left--8px"}>
+                                <div className={"margin__bottom--8px margin__left--16px"}>
                                     <span>Pure Pressed Blush</span>
                                 </div>
                             </Grid>
                             <Grid item xs={12} sm={12} md={12} lg={12}>
-                                <div className={"margin__bottom--32px margin__left--16px"}>
+                                <div className={"margin__bottom--32px margin__left--16px color__grey"}>
                                     <span>Neutral Rose</span>
                                 </div>
                             </Grid>
